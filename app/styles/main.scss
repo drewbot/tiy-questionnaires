@@ -9,20 +9,18 @@ body {
     max-width: 760px;
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-    h1 {
-        font-size: 35px;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
+label, input, textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    padding: 0 0 20px 0;
+}
+
+input, textarea {
+    margin: 10px 0 0 0;
 }
 
 .browsehappy {
