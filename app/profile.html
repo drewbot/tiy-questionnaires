@@ -1,75 +1,132 @@
 <!doctype html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title>Contractor Profile</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
+<head>
+  <meta charset="utf-8">
+  <title>Contractor Profile</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
 
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="../bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
 
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-
-        <header>
-          <h1>TIY Questionnaires</h1>
-        </header>
-
-        <div class="main-content">
-
-          <label>Recipient's Email Address
-            <input type="email" id="profile-recipient" name="profile_recipient">
-          </label>
-          <label>Subject
-            <input type="text" id="profile-subject" value="Contractor Profile" name="profile_recipient">
-          </label>
-          <label>Message
-            <textarea id="profile-message" name="profile_message">Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile here www.google.com</textarea>
-          </label>
-          <a id="profile-send-link" href="#">
-            <button>Share this questionnaire</button>
-          </a>
-
-          <div class="profile-container">
-            <iframe src="https://docs.google.com/forms/d/1xiihr_u_NR50NKbGZhtfyEUo6uBKdYIULdkoGg1NzAE/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-          </div>
-
-        </div>
+</head>
+<body>
+  <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
 
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+  <header>
+    <h1>TIY Questionnaires</h1>
+  </header>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+  <div class="main-content">
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <form>
+      <label>Recipient's Email Address
+        <input type="email" id="profile-recipient" name="profile_recipient">
+      </label>
+      <label>Subject
+        <input type="text" id="profile-subject" value="Contractor Profile" name="profile_recipient">
+      </label>
+      <label>Message
+        <textarea id="profile-message" name="profile_message">Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile here: www.ryedev.com/referral/contractor</textarea>
+      </label>
+      <a id="profile-send-link" href="#">
+        <button>Share this questionnaire</button>
+      </a>
+    </form>
+
+    <div class="profile-container">
+
+        <form action="https://docs.google.com/forms/d/1xiihr_u_NR50NKbGZhtfyEUo6uBKdYIULdkoGg1NzAE/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+        
+        <label class="ss-q-item-label" for="entry_1322654167">Name* (first and last)</label>
+        <input type="text" name="entry.1322654167" value="" class="ss-q-short" id="entry_1322654167" dir="auto" aria-label="Name First and Last " aria-required="true" required="" title="">
+        <div class="error-message" id="868704383_errorMessage"></div>
+
+        <label class="ss-q-item-label" for="entry_471669452">Email*</label>
+        <input type="text" name="entry.471669452" value="" class="ss-q-short" id="entry_471669452" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
+        <div class="error-message" id="2067135602_errorMessage"></div>
+
+        <label class="ss-q-item-label" for="entry_530463103">Phone Number</label>
+        <input type="text" name="entry.530463103" value="" class="ss-q-short required" id="entry_530463103" dir="auto" aria-label="Phone Number (Area Code) Phone Number " aria-required="true" required="" title="">
+        <div class="error-message" id="1704940094_errorMessage"></div>
+
+        <label class="ss-q-item-label" for="entry_992273885">Your Location</label>
+        <input type="text" name="entry.992273885" value="" class="ss-q-short valid" id="entry_992273885" dir="auto" aria-label="Your Location  " title="">
+        <div class="error-message" id="1432402116_errorMessage"></div>
+
+        <label class="ss-q-item-label" for="entry_1663397154"><div class="ss-q-title">Skills</div><div class="ss-q-help ss-secondary-text" dir="ltr">eg: Photoshop, HTML, CSS, JS, Rails, MV Frameworks</div></label>
+        <input type="text" name="entry.1663397154" value="" class="ss-q-short" id="entry_1663397154" dir="auto" aria-label="Skills eg: Photoshop, HTML, CSS, JS, Rails, MV Frameworks " aria-required="true" required="" title="">
+        <div class="error-message" id="520601706_errorMessage"></div>
+
+        <label class="ss-q-item-label" for="entry_819716712"><div class="ss-q-title">What sets you apart?</div><div class="ss-q-help ss-secondary-text" dir="ltr">What are the one or two things that you do best?</div></label>
+        <input type="text" name="entry.819716712" value="" class="ss-q-short" id="entry_819716712" dir="auto" aria-label="What sets you apart? What are the one or two things that you do best? " title="">
+        <div class="error-message" id="1960438285_errorMessage"></div>
+
+        <label class="ss-q-item-label" for="entry_699985999"><div class="ss-q-title">Portfolio
+        </div><div class="ss-q-help ss-secondary-text" dir="ltr">A link to your portfolio or any existing case-studies</div></label>
+        <input type="text" name="entry.699985999" value="" class="ss-q-short" id="entry_699985999" dir="auto" aria-label="Portfolio A link to your portfolio or any existing case-studies " title="">
+        <div class="error-message" id="1969693348_errorMessage"></div>
+
+        <label class="ss-q-item-label" for="entry_1835488332"><div class="ss-q-title">GitHub
+        </div><div class="ss-q-help ss-secondary-text" dir="ltr">A link to your GitHub Profile</div></label>
+        <input type="text" name="entry.1835488332" value="" class="ss-q-short" id="entry_1835488332" dir="auto" aria-label="GitHub A link to your GitHub Profile " title="">
+        <div class="error-message" id="1219971471_errorMessage"></div>
+
+        <label class="ss-q-item-label" for="entry_1221814373">Asking Hourly Rate</label>
+        <input type="text" name="entry.1221814373" value="" class="ss-q-short" id="entry_1221814373" dir="auto" aria-label="Asking Hourly Rate  " aria-required="true" required="" title="">
+        <div class="error-message" id="895604106_errorMessage"></div>
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;-6228868188019763854&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="-6228868188019763854">
+
+        <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+
+        </form>
+
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+
+  <!-- build:js({app,.tmp}) scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 </body>
 </html>
