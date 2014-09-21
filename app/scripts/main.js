@@ -1,4 +1,7 @@
 
+$('.share-profile-button').click(function(){
+	$('.share-profile-form').toggleClass('share-profile-form-show')
+})
 
 $('#profile-send-link button').click(function() {
 	var profileRecipient = $('#profile-recipient').val();
@@ -15,3 +18,4 @@ $('#project-send-link button').click(function() {
     $("#project-send-link").attr('href',"mailto:" + projectRecipient + "?subject=" + projectSubject + "&body=" + projectMessage);
     $('#project-recipient').val('');
 })
+

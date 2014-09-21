@@ -32,73 +32,75 @@
 
   <div class="main-content">
 
-  <form>
-    <label>Recipient's Email Address
-    <input type="email" id="profile-recipient" name="profile_recipient">
-    </label>
-    <label>Subject
-    <input type="text" id="profile-subject" value="Contractor Profile" name="profile_recipient">
-    </label>
-    <label>Message
-    <textarea id="profile-message" name="profile_message">Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile here: www.ryedev.com/referral/contractor</textarea>
-    </label>
-    <a id="profile-send-link" href="#">
-    <button>Share this questionnaire</button>
-    </a>
-  </form>
+      <button class="share-profile-button">Share this questionnaire</button>
 
-  <div class="profile-container">
+      <div class="share-profile-form">
+            <label>Recipient's Email Address
+            <input type="email" id="profile-recipient" name="profile_recipient">
+            </label>
+            <label>Subject
+            <input type="text" id="profile-subject" value="Contractor Profile" name="profile_recipient">
+            </label>
+            <label>Message
+            <textarea id="profile-message" name="profile_message">Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile here: www.ryedev.com/referral/contractor</textarea>
+            </label>
+            <a id="profile-send-link" href="#">
+                <button>Send</button>
+            </a>
+      </div>
 
-    <form action="https://docs.google.com/forms/d/1xiihr_u_NR50NKbGZhtfyEUo6uBKdYIULdkoGg1NzAE/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
-    
-      <label for="entry_1322654167">Name* (first and last)</label>
-      <input type="text" name="entry.1322654167" value="" id="entry_1322654167" dir="auto" aria-label="Name First and Last " aria-required="true" required="" title="">
-      <div id="868704383_errorMessage"></div>
+      <div class="profile-questionnaire-container">
 
-      <label for="entry_471669452">Email*</label>
-      <input type="text" name="entry.471669452" value="" id="entry_471669452" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
-      <div id="2067135602_errorMessage"></div>
+        <form action="https://docs.google.com/forms/d/1xiihr_u_NR50NKbGZhtfyEUo6uBKdYIULdkoGg1NzAE/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+        
+          <label for="entry_1322654167">Name* (first and last)</label>
+          <input type="text" name="entry.1322654167" value="" id="entry_1322654167" dir="auto" aria-label="Name First and Last " aria-required="true" required="" title="">
+          <div id="868704383_errorMessage"></div>
 
-      <label for="entry_530463103">Phone Number</label>
-      <input type="text" name="entry.530463103" value="" class="ss-q-short required" id="entry_530463103" dir="auto" aria-label="Phone Number (Area Code) Phone Number " aria-required="true" required="" title="">
-      <div id="1704940094_errorMessage"></div>
+          <label for="entry_471669452">Email*</label>
+          <input type="text" name="entry.471669452" value="" id="entry_471669452" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
+          <div id="2067135602_errorMessage"></div>
 
-      <label for="entry_992273885">Your Location</label>
-      <input type="text" name="entry.992273885" value="" id="entry_992273885" dir="auto" aria-label="Your Location  " title="">
-      <div id="1432402116_errorMessage"></div>
+          <label for="entry_530463103">Phone Number</label>
+          <input type="text" name="entry.530463103" value="" class="ss-q-short required" id="entry_530463103" dir="auto" aria-label="Phone Number (Area Code) Phone Number " aria-required="true" required="" title="">
+          <div id="1704940094_errorMessage"></div>
 
-      <label for="entry_1663397154"><div>Skills</div><div dir="ltr">eg: Photoshop, HTML, CSS, JS, Rails, MV Frameworks</div></label>
-      <input type="text" name="entry.1663397154" value="" id="entry_1663397154" dir="auto" aria-label="Skills eg: Photoshop, HTML, CSS, JS, Rails, MV Frameworks " aria-required="true" required="" title="">
-      <div id="520601706_errorMessage"></div>
+          <label for="entry_992273885">Your Location</label>
+          <input type="text" name="entry.992273885" value="" id="entry_992273885" dir="auto" aria-label="Your Location  " title="">
+          <div id="1432402116_errorMessage"></div>
 
-      <label for="entry_819716712"><div>What sets you apart?</div><div dir="ltr">Please list one or two things that you do best?</div></label>
-      <input type="text" name="entry.819716712" value="" id="entry_819716712" dir="auto" aria-label="What sets you apart? What are the one or two things that you do best? " title="">
-      <div id="1960438285_errorMessage"></div>
+          <label for="entry_1663397154"><div>Skills</div><div dir="ltr">eg: Photoshop, HTML, CSS, JS, Rails, MV Frameworks</div></label>
+          <input type="text" name="entry.1663397154" value="" id="entry_1663397154" dir="auto" aria-label="Skills eg: Photoshop, HTML, CSS, JS, Rails, MV Frameworks " aria-required="true" required="" title="">
+          <div id="520601706_errorMessage"></div>
 
-      <label for="entry_699985999"><div>Portfolio</div><div dir="ltr">A link to your portfolio or any existing case-studies</div></label>
-      <input type="text" name="entry.699985999" value="" id="entry_699985999" dir="auto" aria-label="Portfolio A link to your portfolio or any existing case-studies " title="">
-      <div id="1969693348_errorMessage"></div>
+          <label for="entry_819716712"><div>What sets you apart?</div><div dir="ltr">Please list one or two things that you do best?</div></label>
+          <input type="text" name="entry.819716712" value="" id="entry_819716712" dir="auto" aria-label="What sets you apart? What are the one or two things that you do best? " title="">
+          <div id="1960438285_errorMessage"></div>
 
-      <label for="entry_1835488332"><div>GitHub
-      </div><div dir="ltr">A link to your GitHub Profile</div></label>
-      <input type="text" name="entry.1835488332" value="" id="entry_1835488332" dir="auto" aria-label="GitHub A link to your GitHub Profile " title="">
-      <div id="1219971471_errorMessage"></div>
+          <label for="entry_699985999"><div>Portfolio</div><div dir="ltr">A link to your portfolio or any existing case-studies</div></label>
+          <input type="text" name="entry.699985999" value="" id="entry_699985999" dir="auto" aria-label="Portfolio A link to your portfolio or any existing case-studies " title="">
+          <div id="1969693348_errorMessage"></div>
 
-      <label for="entry_1221814373">Asking Hourly Rate</label>
-      <input type="text" name="entry.1221814373" value="" id="entry_1221814373" dir="auto" aria-label="Asking Hourly Rate  " aria-required="true" required="" title="">
-      <div id="895604106_errorMessage"></div>
+          <label for="entry_1835488332"><div>GitHub
+          </div><div dir="ltr">A link to your GitHub Profile</div></label>
+          <input type="text" name="entry.1835488332" value="" id="entry_1835488332" dir="auto" aria-label="GitHub A link to your GitHub Profile " title="">
+          <div id="1219971471_errorMessage"></div>
 
-      <input type="hidden" name="draftResponse" value="[,,&quot;-6228868188019763854&quot;]
-      ">
-      <input type="hidden" name="pageHistory" value="0">
+          <label for="entry_1221814373">Asking Hourly Rate</label>
+          <input type="text" name="entry.1221814373" value="" id="entry_1221814373" dir="auto" aria-label="Asking Hourly Rate  " aria-required="true" required="" title="">
+          <div id="895604106_errorMessage"></div>
 
-      <input type="hidden" name="fbzx" value="-6228868188019763854">
+          <input type="hidden" name="draftResponse" value="[,,&quot;-6228868188019763854&quot;]
+          ">
+          <input type="hidden" name="pageHistory" value="0">
 
-      <input type="submit" name="submit" value="Submit" id="ss-submit" class="submit-profile">
+          <input type="hidden" name="fbzx" value="-6228868188019763854">
 
-    </form>
+          <input type="submit" name="submit" value="Submit" id="ss-submit" class="submit-profile">
 
-  </div>
+        </form>
+
+      </div>
 
 
   </div>
