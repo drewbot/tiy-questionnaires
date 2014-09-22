@@ -1,6 +1,6 @@
 
-$('.share-profile-button').click(function(){
-	$('.share-profile-form').toggleClass('share-profile-form-show')
+$('.display-share-button').click(function(){
+	$('.display-share-form').toggleClass('display-share-form-show')
 })
 
 $('#profile-send-link button').click(function() {
@@ -19,3 +19,13 @@ $('#project-send-link button').click(function() {
     $('#project-recipient').val('');
 })
 
+$('.submit-form').click(function(){
+	// Clear input fields
+})
+
+$(document).ready(function(){
+	if (submitted == true) {
+		alert('clear inputs')
+	}
+})
+ 

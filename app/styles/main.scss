@@ -1,48 +1,97 @@
 // bower:scss
 // endbower
 
-body {
+* {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
     margin: 0 auto;
-    background: #fafafa;
+}
+
+body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
-    max-width: 760px;
+    background: url('/images/paper.png');
+}
+
+a {
+    text-decoration: none;
 }
 
 label, input, textarea {
     display: block;
     width: 100%;
-    max-width: 500px;
+    padding: 0;
+    border: 0;
+    // max-width: 500px;
 }
 
 label {
-    padding: 0 0 15px 0;
+    margin: 0 0 10px 0;
     font-size: 1.1em;
 }
 
 input, textarea {
-    margin: 10px 0 0 0;
-    padding: 5px;
-    font-size: 0.92em;
+    margin: 0 0 15px 0;
+    font-size: 0.90em;
+    font-weight: 100;
     color: grey;
 }
 
 input {
-    height: 20px;
+    height: 25px;
 }
 
 textarea {
     height: 60px;
 }
 
+header {
+    height: 200px;
+    background-color: #fff;
 
+    .header-container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 760px;
 
-.share-profile-form {
-    display: none;
+        & h1 {
+            padding-top: 100px;
+        }
+    }
 }
 
-.share-profile-form-show {
+.display-share-container-outer {
+    background-color: #BE5046;
+}
+
+.display-share-container-inner {
+    width: 100%;
+    max-width: 760px;
+}
+
+.display-share-form {
+    display: none;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+}
+
+.display-share-form-show {
     display: inline-block;
+}
+
+
+.main-content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 760px;
+    // background-color: #fff;
+}
+
+
+.profile-questionnaire-container{
+    padding: 20px 20px 20px 20px;
+    width: 100%;
 }
 
 
