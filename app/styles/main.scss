@@ -43,10 +43,15 @@ input, textarea {
     font-size: 0.90em;
     font-weight: 100;
     color: grey;
+
+    &:focus {
+        outline: none; 
+        border: 2px solid #BE5046;
+    }
 }
 
 input {
-    height: 25px;
+    height: 28px;
 }
 
 textarea {
@@ -65,7 +70,7 @@ textarea {
     padding-right: 20px;
 }
 
-.clear-float {
+.clear-float-left {
     clear: left;
 }
 
@@ -89,13 +94,39 @@ header {
 
     .header-container {
         margin: 0 auto;
+        padding: 100px 20px 0 20px;
         width: 100%;
         max-width: 760px;
 
-        & h1 {
-            padding-top: 100px;
+        & a {
+            display: inline;
         }
+
+        & h1 {
+            display: inline;
+        }
+
+        & button {
+            float: right;
+            padding: 0 30px 0 30px;
+            height: 50px;
+            background-color: #BE5046;
+            border: 0;
+            font-size: 1.1em;
+            color: white;
+            cursor: pointer;
+
+            & i {
+                margin: 0 20px 0 0;
+                font-size: 1.2em;
+            }
+        }
+
     }
+}
+
+.clear-float-right {
+    clear: right;
 }
 
 // Footer 
@@ -104,6 +135,34 @@ header {
 //     height: 200px;
 //     background-color: #222222;
 // }
+
+// Landing
+
+.profile-cta, .project-cta {
+    margin: 50px 20px 0 20px;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    background-color: #BE5046;
+    border-radius: 5px;
+
+    & h3 {
+        color: #fff;
+        font-weight: 300;
+    }
+
+    & i {
+        margin: 20px 0 0 0;
+        font-size: 6em;
+        color: #fff;
+    }
+
+    & i:nth-child(0n+1) {
+        font-size: 9em;
+    }
+}
+
+
+// Forms
 
 // Share Form
 
@@ -121,10 +180,27 @@ header {
     padding: 20px 20px 20px 20px;
     width: 100%;
     color: #fff;
+    // height: 0px;
+    // -webkit-transition: all 0.4s ease;
+
+    & button {
+        padding: 0 30px 0 30px;
+        height: 50px;
+        background-color: white;
+        font-size: 1em;
+        color: #222222;
+        border: 2px solid #222222;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 .display-share-form-show {
     display: inline-block;
+    // height: 277px;
+    // -webkit-transition: all 0.4s ease;
 }
 
 // Main content (questionnaire)
@@ -158,9 +234,6 @@ header {
         cursor: pointer;
     }
 }
-
-
-
 
 
 .browsehappy {
