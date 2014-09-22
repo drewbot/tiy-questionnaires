@@ -27,26 +27,99 @@
 
 
         <header>
-          <h1>TIY Questionnaires</h1>
+          <div class="header-container">
+              <a href="index.html"><h1>TIY Questionnaires</h1></a>
+              <button class="display-share-button">Share this questionnaire</button>
+          </div>
         </header>
 
+        <div class="display-share-container-outer">
+          <div class="display-share-container-inner">
+              <div class="display-share-form">
+
+                  <div class="half-width padded">
+                      <label for="project-recipient">Recipient's Email Address</label>
+                      <input type="email" id="project-recipient" name="project_recipient">
+                  </div>
+
+                  <div class="half-width">
+                      <label for="project-subject">Subject</label>
+                      <input type="text" id="project-subject" value="Quick Project Questionnaire" name="project_subject">
+                  </div>
+
+                  <label for="project-message">Message</label>
+                   <textarea id="project-message" name="project_message">Hello, in order for us to better assess your needs, please fill out the Quick Project Questionnaire here: www.ryedev.com/referral/project</textarea>
+
+                  <a id="project-send-link" href="#">
+                      <button>Send</button>
+                  </a>
+              </div>
+          </div>
+        </div>
+
         <div class="main-content">
+          <div class="questionnaire-container">
 
-          <label>Recipient's Email Address
-            <input type="email" id="project-recipient" name="project_recipient">
-          </label>
-          <label>Subject
-            <input type="text" id="project-subject" value="Quick Project Questionnaire" name="profile_recipient">
-          </label>
-          <label>Message
-            <textarea id="project-message" name="profile_message">Hello, in order for us to better assess your needs, please fill out the Quick Project Questionnaire here: www.ryedev.com/referral/project</textarea>
-          </label>
-          <a id="project-send-link" href="#">
-            <button>Share this questionnaire</button>
-          </a>
+            <h2>Quick Project Questionnaire</h2>
 
-          <div class="project-container">
-            <iframe src="https://docs.google.com/forms/d/1qKZS2cQW_kP7SgBaeKAPinbQiXRjCILSbyHkxetOZDE/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <!-- I replaced the opening form tag from the original paste with what's below -->
+
+            <script type="text/javascript">var submitted=false;</script>
+
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='http://google.com';}"></iframe>
+
+            <form action="https://docs.google.com/forms/d/1qKZS2cQW_kP7SgBaeKAPinbQiXRjCILSbyHkxetOZDE/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+
+          <!-- All classes and ids have been removed and I cleaned up the markup -->
+              
+              <label for="entry_387577468"><div>Referring Iron Yard Employee *</div><div class="sub-text">First and Last Name</div></label>
+              <input type="text" name="entry.387577468" value="" id="entry_387577468" aria-label="Referring Iron Yard Employee First and Last Name " aria-required="true" required="">
+              <div class="error-message" id="150918420_errorMessage"></div>
+
+              <label for="entry_214667053"><div>Client Name *</div><div class="sub-text">First and Last</div></label>
+              <input type="text" name="entry.214667053" value="" id="entry_214667053" aria-label="Client Name First and Last " aria-required="true" required="">
+              <div class="error-message" id="1451106846_errorMessage"></div>
+
+              <div class="half-width padded">
+                <label for="entry_715378609">Client Email *</label>
+                <input type="text" name="entry.715378609" value="" id="entry_715378609" aria-label="Client Email  " aria-required="true" required="">
+                <div class="error-message" id="1558617673_errorMessage"></div>
+              </div>
+
+              <div class="half-width">
+                <label for="entry_446168114">Client Phone Number *</label>
+                <input type="text" name="entry.446168114" value="" id="entry_446168114" aria-label="Client Phone Number (Area Code) Phone Number " aria-required="true" required="">
+                <div class="error-message" id="769073566_errorMessage"></div>
+              </div>
+
+              <label for="entry_1656247290">Client Company Name *</label>
+              <input type="text" name="entry.1656247290" value="" id="entry_1656247290" aria-label="Client Company Name  " aria-required="true" required="">
+              <div class="error-message" id="685946975_errorMessage"></div>
+
+              <label for="entry_448136552">Description of the project *</label>
+              <textarea name="entry.448136552" rows="8" cols="0" class="ss-q-long" id="entry_448136552" aria-label="Description of the project  " aria-required="true" required=""></textarea>
+              <div class="error-message" id="1300293891_errorMessage"></div>
+
+              <label for="entry_576179902">Technology to be used</label>
+              <input type="text" name="entry.576179902" value="" id="entry_576179902" aria-label="Technology to be used (If Applicable) ">
+              <div class="error-message" id="2063377764_errorMessage"></div>
+
+              <label for="entry_1457078572"><div>Student Recommendation</div><div class="sub-text">(If Applicable)</div></label>
+              <input type="text" name="entry.1457078572" value="" id="entry_1457078572" aria-label="Student Recommendation (If Applicable) ">
+              <div class="error-message" id="553014834_errorMessage"></div>
+
+              <input type="hidden" name="draftResponse" value="[,,&quot;-1721882903337719561&quot;]">
+
+              <input type="hidden" name="pageHistory" value="0">
+
+              <input type="hidden" name="fbzx" value="-1721882903337719561">
+
+              <div class="submit-input">
+                <input type="submit" name="submit" value="Submit" class="submit-form">
+              </div>
+
+            </form>
+
           </div>
 
         </div>

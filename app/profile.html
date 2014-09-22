@@ -38,12 +38,20 @@
   <div class="display-share-container-outer">
     <div class="display-share-container-inner">
         <div class="display-share-form">
-            <label for="profile-recipient">Recipient's Email Address</label>
+
+            <div class="half-width padded">
+                <label for="profile-recipient">Recipient's Email Address</label>
                 <input type="email" id="profile-recipient" name="profile_recipient">
-            <label for="profile-subject">Subject</label>
-                <input type="text" id="profile-subject" value="Contractor Profile" name="profile_recipient">
+            </div>
+
+            <div class="half-width">
+                <label for="profile-subject">Subject</label>
+                <input type="text" id="profile-subject" value="Contractor Profile" name="profile_subject">
+            </div>
+
             <label for="profile-message">Message</label>
-                <textarea id="profile-message" name="profile_message">Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile here: www.ryedev.com/referral/contractor</textarea>
+             <textarea id="profile-message" name="profile_message">Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile here: www.ryedev.com/referral/contractor</textarea>
+
             <a id="profile-send-link" href="#">
                 <button>Send</button>
             </a>
@@ -53,7 +61,7 @@
 
   <div class="main-content">
 
-      <div class="profile-questionnaire-container">
+      <div class="questionnaire-container">
 
         <h2>Contractor Profile</h2>
 
@@ -67,42 +75,51 @@
 
           <!-- All classes and ids have been removed and I cleaned up the markup -->
         
-          <label for="entry_1322654167"><div>Name *</div><div dir="ltr">First and Last Name</div></label>
-          <input type="text" name="entry.1322654167" value="" dir="auto" aria-label="Name First and Last " aria-required="true" required="" title="">
+          <label for="entry_1322654167"><div>Name *</div><div class="sub-text">First and Last Name</div></label>
+          <input type="text" name="entry.1322654167" value="" aria-label="Name First and Last " aria-required="true" required="">
           <div id="868704383_errorMessage"></div>
 
-          <label for="entry_471669452">Email *</label>
-          <input type="text" name="entry.471669452" value="" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
-          <div id="2067135602_errorMessage"></div>
+          <div class="half-width padded">
+              <label for="entry_471669452">Email *</label>
+              <input type="text" name="entry.471669452" value="" aria-label="Email  " aria-required="true" required="">
+              <div id="2067135602_errorMessage"></div>
+          </div>
 
-          <label for="entry_530463103">Phone Number *</label>
-          <input type="text" name="entry.530463103" value="" class="ss-q-short required" dir="auto" aria-label="Phone Number (Area Code) Phone Number " aria-required="true" required="" title="">
-          <div id="1704940094_errorMessage"></div>
+          <div class="half-width">
+              <label for="entry_530463103">Phone Number *</label>
+              <input type="text" name="entry.530463103" value="" aria-label="Phone Number (Area Code) Phone Number " aria-required="true" required="">
+              <div id="1704940094_errorMessage"></div>
+          </div>
 
           <label for="entry_992273885">Your Location</label>
-          <input type="text" name="entry.992273885" value="" dir="auto" aria-label="Your Location  " title="">
+          <input type="text" name="entry.992273885" value="" aria-label="Your Location  " title="">
           <div id="1432402116_errorMessage"></div>
 
-          <label for="entry_1663397154"><div>Skills *</div><div dir="ltr">eg: Photoshop, HTML, CSS, JS, Rails, MV Frameworks</div></label>
-          <input type="text" name="entry.1663397154" value="" dir="auto" aria-label="Skills eg: Photoshop, HTML, CSS, JS, Rails, MV Frameworks " aria-required="true" required="" title="">
+          <label for="entry_1663397154"><div>Skills *</div><div class="sub-text">eg: Photoshop, HTML, CSS, JS, Rails, MV Frameworks</div></label>
+          <input type="text" name="entry.1663397154" value="" aria-label="Skills eg: Photoshop, HTML, CSS, JS, Rails, MV Frameworks " aria-required="true" required="">
           <div id="520601706_errorMessage"></div>
 
-          <label for="entry_819716712"><div>What sets you apart?</div><div dir="ltr">Please list one or two things that you do best.</div></label>
-          <input type="text" name="entry.819716712" value="" dir="auto" aria-label="What sets you apart? What are the one or two things that you do best? " title="">
+          <label for="entry_819716712"><div>What sets you apart?</div><div class="sub-text">Please list one or two things that you do best.</div></label>
+          <input type="text" name="entry.819716712" value="" aria-label="What sets you apart? What are the one or two things that you do best? " title="">
           <div id="1960438285_errorMessage"></div>
 
-          <label for="entry_699985999"><div>Portfolio</div><div dir="ltr">A link to your portfolio or any existing case-studies</div></label>
-          <input type="text" name="entry.699985999" value="" dir="auto" aria-label="Portfolio A link to your portfolio or any existing case-studies " title="">
-          <div id="1969693348_errorMessage"></div>
+          <div class="half-width padded">
+              <label for="entry_699985999"><div>Portfolio</div><div class="sub-text">A link to your portfolio</div></label>
+              <input type="text" name="entry.699985999" value="" aria-label="Portfolio A link to your portfolio or any existing case-studies " title="">
+              <div id="1969693348_errorMessage"></div>
+          </div>
 
-          <label for="entry_1835488332"><div>GitHub
-          </div><div dir="ltr">A link to your GitHub Profile</div></label>
-          <input type="text" name="entry.1835488332" value="" dir="auto" aria-label="GitHub A link to your GitHub Profile " title="">
-          <div id="1219971471_errorMessage"></div>
+          <div class="half-width">
+              <label for="entry_1835488332"><div>GitHub</div><div class="sub-text">A link to your GitHub Profile</div></label>
+              <input type="text" name="entry.1835488332" value="" aria-label="GitHub A link to your GitHub Profile " title="">
+              <div id="1219971471_errorMessage"></div>
+          </div>
 
-          <label for="entry_1221814373">Asking Hourly Rate *</label>
-          <input type="text" name="entry.1221814373" value="" dir="auto" aria-label="Asking Hourly Rate  " aria-required="true" required="" title="">
-          <div id="895604106_errorMessage"></div>
+          <div class="half-width padded">
+              <label for="entry_1221814373">Asking Hourly Rate *</label>
+              <input type="text" name="entry.1221814373" value="" aria-label="Asking Hourly Rate  " aria-required="true" required="">
+              <div id="895604106_errorMessage"></div>
+          </div>
 
           <input type="hidden" name="draftResponse" value="[,,&quot;-6228868188019763854&quot;]
           ">
@@ -110,7 +127,9 @@
 
           <input type="hidden" name="fbzx" value="-6228868188019763854">
 
-          <input type="submit" name="submit" value="Submit" class="submit-form">
+          <div class="half-width submit-input">
+            <input type="submit" name="submit" value="Submit" class="submit-form">
+          </div>
 
         </form>
 
@@ -118,6 +137,8 @@
 
 
   </div>
+
+  <footer></footer>
 
 
   <!-- build:js scripts/vendor.js -->
